@@ -1,0 +1,207 @@
+html {
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+
+.body {
+	background-color: white;
+	color: black;
+}
+
+#titre{
+	border: blue;
+	color:red;
+}
+
+.main{
+	position: absolute;
+	left: 384px;
+}
+
+.rectangle{
+	z-index: 10;
+	width:42%;
+	min-height: 290px;
+	height:35%;
+	background:rgb(255, 0, 0);
+	position: relative;
+	left: 17%;
+}
+
+.triangle{
+	z-index: 10;
+    width: 1%;
+    height:1%;
+    border:5px solid #069;
+    border-color:red transparent transparent transparent;
+    border-width:100px;
+	position: relative;
+	left: 6.375%;
+}
+
+.Menu{
+	z-index: 10;
+	width: 325px;
+	height: 99%;
+	position: fixed;
+	left: 0%;
+	top:0%;
+	border: 5px;
+	border-style: dashed;
+	border-color: red;
+	background-color: rgb(43, 41, 36);
+}
+
+.Menu nav{
+	color: black;
+	z-index: 10;
+	font-size: small;
+	position: fixed;
+	top: 80px;
+	left: 60px;
+}
+.Menu li:hover{
+	transition: 500ms;
+	scale: 1.1;
+}
+
+.underline{
+    padding-bottom: 0.05rem;
+    position: relative;
+
+}
+
+.underline::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color:rgb(255, 255, 255);
+    transition: width 0.25s ease-out;
+}
+
+.underline:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.Menu a{
+	color: black;
+	text-decoration: none;
+}
+
+
+.TBL{
+	z-index: 10;
+	position:relative;
+	left: 40px;
+	top: -100px;
+	height: 230px;
+}
+
+.Menu h1{
+	text-align: center;
+}
+
+.btn-toggle{
+	z-index: 100;
+    position: fixed;
+    top: 2%;
+    right: 6px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+body.dark {
+    color: #fff!important;
+    background: #333!important;
+}
+
+body.dark .btn-toggle {
+    background: #f1f1f1;
+    color: #333;
+}
+
+.to-top{
+	z-index: 100;
+    color: #fff;
+    background-color: rgb(0, 17, 90);
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 500ms;
+}
+
+.to-top.active{
+    bottom: 2%;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#www{
+	transform-origin: center center;
+	z-index: 5;
+	width: 39vw;
+	position: absolute;
+	top: 1%;
+	left: 20%;
+}
+
+#Wtitle a{
+	z-index: 11;
+	color: black;
+	text-decoration: none;
+}
+
+#Wtitle{
+	z-index: 10;
+	display: flex;
+	position: absolute;
+	top: 1%;
+    left: 35%;
+	transform-origin: center center;
+	font-size: 5vw;
+}
+
+#zéro{
+	padding-top: 55vw;
+}
+
+table, td{
+	border-color: black;
+	border-style: solid ;
+}
+
+#dix{
+	font-size: xx-large;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-weight: bolder	;
+	font-variant: small-caps;
+	color: fuchsia;
+	font-stretch:extra-expanded;
+	text-decoration: dashed;
+}
+
+#dix{
+	margin-top: 200vh;
+}
